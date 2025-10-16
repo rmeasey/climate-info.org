@@ -1,5 +1,5 @@
-# Clinate-Info
-Created by a guy who just wanted all the stuff he looks at in one place.
+# Climate-Info
+Created by a guy who just wanted all the climate web stuff he looks at in one place.
 
 Nothing fancy.
 
