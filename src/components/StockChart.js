@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import {Card, CardHeader, CardBody, CardFooter} from 'reactstrap'
+import {Card, CardHeader, CardBody} from 'reactstrap'
 import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official';
 

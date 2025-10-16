@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardBody, CardFooter, Col } from 'reactstrap'
 import VideoPlayer from '../../VideoPlayer'
 const AuroraForecast = () => {
     const src="https://spaceweather.gfz.de/fileadmin/Aurora-Forecast/aurora_forecast_browser.webm"

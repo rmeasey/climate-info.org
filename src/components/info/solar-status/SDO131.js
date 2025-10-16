@@ -1,4 +1,3 @@
-import VideoPlayer from '../../VideoPlayer'
 import ImageAnimator from '../../ImageAnimator'
 const SDO131 = () => {
     //const src="https://sdo.gsfc.nasa.gov/assets/img/latest/mpeg/latest_1024_0131.mp4"

@@ -111,9 +111,6 @@ const Sidebar = () => {
 
   let location = useLocation();
 
-  const [sidebar, setSidebar] = useState(false);
-  const showSidebar = () => setSidebar(!sidebar);
-
   const theme = useTheme();
 
   const getPathName = (inputString) => {

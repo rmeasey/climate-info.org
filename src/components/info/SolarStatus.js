@@ -10,8 +10,8 @@ import SunspotActivity from './solar-status/SunspotActivity'
 import MagneticActivity from './solar-status/MagneticActivity'
 import SDOHMii from './solar-status/GOESThematic'
 import FarsideMap from './solar-status/FarsideMap'
-import LASCO_C3_Combo from './solar-status/LASCO_C3_Combo'
-import LASCO_C2_Combo from './solar-status/LASCO_C2_Combo'
+import LASCOC3Combo from './solar-status/LASCO_C3_Combo'
+import LASCOC2Combo from './solar-status/LASCO_C2_Combo'
 
 const SolarStatus = () => {
     return (
@@ -29,8 +29,8 @@ const SolarStatus = () => {
                         <SDO335 />
                     </Row>
                     <Row xs="1" sm="2">
-                        <LASCO_C2_Combo />   
-                        <LASCO_C3_Combo /> 
+                        <LASCOC2Combo />   
+                        <LASCOC3Combo /> 
                     </Row>
                     <Row xs="1" sm="2" md="3">
                         <SunspotActivity/>

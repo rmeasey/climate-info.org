@@ -1,8 +1,7 @@
 import React from 'react'
-import {Navbar, Collapse, Nav, NavbarBrand, DropdownToggle, DropdownMenu, DropdownItem, Dropdown, Button} from 'reactstrap'
+import {Navbar, Collapse, Nav, NavbarBrand, Button} from 'reactstrap'
 
 import { useTheme } from '../hooks/useTheme'
-import ThemeBtn from '../components/ThemeButton'
 
 import PageTitle from "../components/PageTitle";
 import LogoSmall from '../assets/images/logos/climate-info-logo-small.png'
@@ -17,7 +16,6 @@ const Header = () => {
     document.getElementById("sidebarArea").classList.toggle("showSidebar");
   };
   const theme = useTheme();
-  const title = document.title;
 
   return (
     <div className="contrast-bg">

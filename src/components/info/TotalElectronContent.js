@@ -7,12 +7,8 @@ import L1RangeAverage from './total-electron-content/L1RangeAverage'
 import L1RangeErrorPacific from './total-electron-content/L1RangeErrorPacific'
 import L1RangeAnomalyPacific from './total-electron-content/L1RangeAnomalyPacific'
 import L1RangeAveragePacific from './total-electron-content/L1RangeAveragePacific'
-import GloTECAnomaly from './total-electron-content/GloTECAnomaly'
-import GloTECRange from './total-electron-content/GloTECRange'
 import Glotec100asm from './total-electron-content/CTIPeTEC'
 import ForecastTEC from './total-electron-content/ForecastTEC'
-import NARangeTEC from './total-electron-content/NARangeTEC'
-import NADiffTEC from './total-electron-content/NADiffTEC'
 import SeismicActivity from './total-electron-content/SeismicActivity'
 
 const TotalElectronContent = () => {

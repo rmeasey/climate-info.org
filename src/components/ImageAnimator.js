@@ -187,7 +187,7 @@ export default function ImageAnimator({src, title, width, height}) {
         }
       })
     }
-  }, [])
+  }, [hasLoaded, src])
 
   return (
     <Col ref={containerRef}>
