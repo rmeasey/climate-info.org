@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardBody, CardFooter, Col } from 'reactstrap'
 import VideoPlayer from '../../VideoPlayer'
 const SouthernHemisphere = () => {
     const today = new Date(Date.now())

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {Card, CardHeader, CardBody} from 'reactstrap'
 import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official';
@@ -9,7 +9,7 @@ const StockChart = ({src, title}) => {
     const [chartOptions, setChartOptions] = useState({defaultChart})
     const [isLoading, setIsLoading] = useState(true)
 
-    const processData = (data) => {
+    const processData = useCallback((data) => {
         var ydata = []
         var yref = []
         const isXray = data.some(item => "max_xrlong" in item);
@@ -24,7 +24,7 @@ const StockChart = ({src, title}) => {
         localChartOptions.series[0].data = ydata
         localChartOptions.xAxis.categories = yref
         return localChartOptions 
-    }
+    }, [chartOptions.defaultChart])
 
     useEffect(() => {
     fetch(src)
@@ -33,7 +33,7 @@ const StockChart = ({src, title}) => {
             setChartOptions(processData(data));
             setIsLoading(false);
         });
-    }, []);
+    }, [processData, src]);
     return (
     <>
         {isLoading ? <p>Loading data...</p> :
