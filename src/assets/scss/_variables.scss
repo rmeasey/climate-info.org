@@ -1,0 +1,189 @@
+/*******************/
+// Theme Fonts
+/********************/
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+//added hanken grotesk for re-branding "Hanken Grotesk"
+$font-family-sans-serif: "Hanken Grotesk", Arial, sans-serif;
+
+
+/*******************/
+// Colors
+/********************/
+$primary: #4464f3;
+$info: #64c2c9;
+$danger: #f64e60;
+$warning: #e57e0f;
+$caution: #dfbd03; //custom color (may not be fully implemented)
+$success: #5cb85c;
+$dark: #f8f8f8;
+$light: #26333A;
+$secondary: #5872c7;
+$purple: #8e5e98; //custom color (may not be fully implemented)
+$grey: #6c757d; //custom color (may not be fully implemented)
+
+$ucandc: #FF8200;
+$cx: #3F6FFF;
+$sandc: #AE14CE;
+
+$augment: $primary;
+$assure: $info;
+$assist: #293583;
+$maintain: $grey;
+
+/*******************/
+// Base Theme
+/********************/
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+
+/*******************/
+// Theme variants (Light/Dark)
+/********************/
+$themes: ( 
+  "bg-color": (
+    "lightTheme": #E4E4E4,
+    "darkTheme": #1b272d,
+  ),
+  "bg-color-contrast1": (
+    "lightTheme": #f8f8f8,
+    "darkTheme": #22333b,
+  ),
+  "bg-color-contrast2": (
+    "lightTheme": #d4d6df,
+    "darkTheme": #2c414b,
+  ),
+  "bg-color-contrast3": (
+    "lightTheme": #d6e3ff,
+    "darkTheme": #3e5a68,
+  ),
+  "bg-color-contrast4": (
+    "lightTheme": #eceff1,
+    "darkTheme": #2c414b,
+  ),
+  "border-color": (
+    "lightTheme": rgba(0, 0, 0, 0.1),
+    "darkTheme": rgba(255, 255, 255, 0.1),
+  ),
+  "border-color2": (
+    "lightTheme": rgba(0, 0, 0, 0.3),
+    "darkTheme": rgba(255, 255, 255, 0.3),
+  ),
+  "text-color": (
+    "lightTheme": #35363b,
+    "darkTheme": #eaf2fb,
+  ),
+  "text-color-muted": (
+    "lightTheme": #35363bc6,
+    "darkTheme": #eaf2fbc6,
+  ),
+  "text-color2": (
+    "lightTheme": #000,
+    "darkTheme": #f8f8f8,
+  )
+);
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f8f8f8 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #757e85 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #1e2a35 !default;
+$black: #000 !default;
+
+// dark theme pallete
+$dark-900: #121212;
+$dark-800: #1e1e1e;
+$dark-700: #232323;
+$dark-600: #272727;
+$dark-500: #2c2c2c;
+$dark-400: #2e2e2e;
+$dark-300: #333;
+$dark-200: #363636;
+$dark-100: #383838;
+
+/*******************/
+// Theme Text Contrast
+/********************/
+$min-contrast-ratio: 2;
+
+/*******************/
+// Theme body bg & text color
+/********************/
+$body-bg: $gray-200 !default;
+$body-color: $gray-900 !default;
+
+/*******************/
+// Theme common variable
+/********************/
+$border-radius: 0.3rem !default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.05);
+$headings-font-weight: 600 !default;
+
+$card-border-width: 0 !default;
+$card-box-shadow: $box-shadow !default;
+$grid-gutter-width: 1.85rem !default;
+$card-bg: $white;
+
+$input-bg: $white !default;
+$list-group-bg:$white !default;
+$table-bg:$white !default;
+$dropdown-bg:$white !default;
+
+/*******************/
+// Theme btn
+/********************/
+$btn-focus-width: 0px;
+
+/*******************/
+// Theme sidebar width
+/********************/
+$sidebarWidth: 260px;
+$sidebarColor: $white;
+
+/*******************/
+// Maintel Gradient
+/********************/
+$blue: #57aefe;
+$green:#B2D953;
+$dgreen:#82A62C;
+$list1: $blue, $green; 
+
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-mode {
+  @include styles("darkTheme");
+}
+
+.light-mode {
+  @include styles("lightTheme");
+}

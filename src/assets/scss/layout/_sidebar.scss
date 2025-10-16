@@ -1,0 +1,44 @@
+@import "../variables";
+
+.sidebarArea {
+  flex-shrink: 0;
+  width: $sidebarWidth;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  .sidenav-bg:hover {
+    opacity: 0.8;
+  }
+  .sidenav-selected{
+    background-color: var(--bg-color-contrast2);
+    color: $light;
+    border-left: 3px solid $dgreen;
+    font-weight: bolder;
+  }
+  .sidenav-bg:active {
+    opacity: 0.5;
+  }
+  .sidebarNav-dropdown{
+    background-color: var(--bg-color-contrast2);
+    border-left: 3px solid var(--border-color);
+  }
+  .sidenav-dropdown-selected {
+    color: $white;
+    background-color: var(--bg-color-contrast3);
+    border-left: 3px solid var(--border-color2);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sidebarArea {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+    margin-left: -$sidebarWidth;
+    transition: 0.2s ease-in;
+    &.showSidebar {
+      margin-left: 0px;
+    }
+  }
+}
+

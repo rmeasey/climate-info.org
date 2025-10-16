@@ -1,0 +1,211 @@
+
+//Custom styling goes here
+.call-to-action {
+    position: relative;
+    top: 50%;
+    margin-left: 2rem;
+}
+
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.circle-large {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.circle-xlarge {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 74px;
+  font-weight: bold;
+}
+
+.circle-small {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*****************************************************
+Company Drop Down List
+*****************************************************/
+.company-select__menu {
+  margin-top: 0.1rem!important;
+  border-radius: 0!important;
+  z-index: 9999!important;
+}
+
+.company-select__control {
+  border: 0!important;
+}
+
+.company-select__control--is-focused {
+  box-shadow: 0 0 0 0.25rem rgba(152, 193, 60, 0.25)!important;
+}
+
+
+/*****************************************************
+User Drop Down List
+*****************************************************/
+.user-select__menu {
+  margin-top: 0.1rem!important;
+  border-radius: 0!important;
+}
+
+.user-select__control {
+  border: 0!important;
+}
+
+.user-select__control--is-focused {
+  box-shadow: 0 0 0 0.25rem rgba(152, 193, 60, 0.25)!important;
+}
+
+
+/*****************************************************
+About
+*****************************************************/
+.card-transparent {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+.card-no-shadow {
+  background-color: var(--bg-color-contrast4)!important;
+  box-shadow: none !important;
+}
+
+
+/*****************************************************
+Toast Component
+*****************************************************/
+
+.main-toast-container .Toastify__toast {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #22333b;
+  --toastify-color-info: #64c2c9;
+  --toastify-color-success: #5cb85c;
+  --toastify-color-warning: #e57e0f;
+  --toastify-color-error: #f64e60;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+
+  --toastify-toast-width: 30%;
+  --toastify-toast-background: #b9b6b6;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+
+  //Used only for colored theme
+  --toastify-text-color-info: #64c2c9;
+  --toastify-text-color-success: #5cb85c;
+  --toastify-text-color-warning:#e57e0f;
+  --toastify-text-color-error: #f64e60;
+
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+
+  // Used when no type is provided
+  // toast("**hello**")
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd997,
+    #5ac8fa,
+    #1a98ce,
+    #007aff,
+    #50dd57,
+    #157915
+  );
+  // Used when no type is provided
+  --toastify-color-progress-dark: var(--toastify-color-progress-light);
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+
+  // used to control the opacity of the progress trail
+  --toastify-color-progress-bgo: .2;
+}
+
+.overlay-container {
+ position: relative;
+ height: 100%;
+}
+
+.overlay-button {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Initially hide the button */
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 0.3s ease;
+}
+
+.overlay-container:hover .overlay-button {
+  z-index: 1; /* Show button on hover */
+  opacity: 1; /* Show button on hover */
+}
+
+.overlay-container:hover {
+  opacity: 0.8!important;
+}
+
+.modal-fullscreen {
+  width: 100%;height: auto;display: block;border-radius: 20px;
+}
+
+img.fullscreen{
+  width: 100%;height: auto;display: block;border-radius: 20px;
+}
+
+img.cardimage{
+  width: 100%;height: auto;
+}
+
+.scales_table {
+  width: 100%;height: auto;  
+}
