@@ -13,6 +13,12 @@ You know the sort of things...
 
 ### `npm run build`
 
+### GitPages Deploy
+I've set up a workflow for updating the site hosted in GitPages:
+```
+npm run deploy -- -m "Deploy climate-info.org to GitHub Pages"
+```
+
 ## Courtesy References:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
