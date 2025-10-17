@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclimate_info=self.webpackChunkclimate_info||[]).push([[233],{5233:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});var r=a(579);const c=()=>(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)("div",{className:"container-fluid py-2",children:(0,r.jsx)("h2",{className:"mb-0 text-primary",children:"There Be Info Near..."})}),(0,r.jsx)("br",{})]})}}]);
+//# sourceMappingURL=233.d3b6071f.chunk.js.map
