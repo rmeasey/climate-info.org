@@ -1,8 +1,8 @@
 {
   "name": "climate-info",
   "version": "0.1.0",
-  "homepage": "https://www.climate-info.org",
-  "private": true,
+  "homepage": "https://rmeasey.github.io/climate-info.org",
+  "private": false,
   "dependencies": {
     "@rbnd/react-dark-mode": "^2.0.2",
     "@testing-library/dom": "^10.4.1",
